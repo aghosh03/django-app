@@ -15,18 +15,19 @@
     <div class="container" style="margin: auto; width: 100%;">
         <div id="header" class="row border-bot-1-light" style="margin: auto; width: 100%; height: 100px;">
             
+            {% load static %}
+
             <div class="col-10">
-                {% load static %}
-                <img src="{% static 'backend/nleyetn_logo.jpg' %}#logo" height="100">
+                <img src="{% static 'images/nleyetn_logo.jpg' %}#logo" height="100">
             </div>
             
             <div class="col text-right">
                 <a href="{% url 'backend:index' %}">
-                    <img src="{% static 'backend/home_icon.svg' %}#logo" alt="Home" height="50">
+                    <img src="{% static 'images/home_icon.svg' %}#logo" alt="Home" height="50">
                 </a>
                 
                 <a href="{% url 'backend:settings' %}">
-                    <img src="{% static 'backend/settings_icon.svg' %}#logo" alt="Settings" height="50">
+                    <img src="{% static 'images/settings_icon.svg' %}#logo" alt="Settings" height="50">
                 </a>
             </div>
         </div>
