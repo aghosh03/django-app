@@ -15,19 +15,19 @@
 </head>
 <body>
     <div class="container" style="margin: auto; width: 100%;">
-        <div id="header" class="row border-bot-1-light" style="margin: auto; width: 100%; height: 100px;">
+        <div id="header" class="row border-bot-1-light" style="margin: auto; width: 100%; height: 75px; padding-top: 5px;">
 
             <div class="col-10">
-                <img src="{% static 'images/nleyetn_logo.jpg' %}#logo" height="100">
+                <img src="{% static 'images/nleyetn_logo.jpg' %}#logo" height="60">
             </div>
             
-            <div class="col text-right">
+            <div class="col-2 text-right">
                 <a href="{% url 'backend:index' %}">
-                    <img src="{% static 'images/home_icon.svg' %}#logo" alt="Home" height="50">
+                    <img src="{% static 'images/home_icon.svg' %}#home" alt="Home" height="50">
                 </a>
                 
                 <a href="{% url 'backend:settings' %}">
-                    <img src="{% static 'images/settings_icon.svg' %}#logo" alt="Settings" height="50">
+                    <img src="{% static 'images/settings_icon.svg' %}#settings" alt="Settings" height="50">
                 </a>
             </div>
         </div>

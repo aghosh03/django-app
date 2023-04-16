@@ -1,5 +1,10 @@
 {% extends 'backend/base.html' %}
 
+{# Load CSS and JavaScript for bootstrap #}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
 {% block content %}
   <form action="/" method="post" class="form">
     {% csrf_token %}
@@ -8,4 +13,6 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     {% endbuttons %}
   </form>
+
+  
 {% endblock content %}
